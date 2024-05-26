@@ -5,14 +5,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class TestCases {
+public class TestCases2 {
     ChromeDriver driver;
-    public TestCases()
+    public  TestCases2()
     {
         System.out.println("Constructor: TestCases");
         WebDriverManager.chromedriver().timeout(30).setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+       
+
     }
 
     public void endTest()
@@ -24,11 +26,16 @@ public class TestCases {
     }
 
     
-    public  void testCase01(){
+    public  void TestCases1(){
         System.out.println("Start Test case: testCase01");
-        driver.get("https://www.google.com");
+
+        
+       
+       
         System.out.println("end Test case: testCase02");
+    
     }
-
-
 }
+
+
+
